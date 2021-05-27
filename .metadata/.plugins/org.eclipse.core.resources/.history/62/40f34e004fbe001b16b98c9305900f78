@@ -1,0 +1,36 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio3 {
+
+	public static void main(String[] args) {
+		
+		String maiorcargo = "";
+		double maiorsalario = 0;
+		double somasalarios = 0;
+		int qtdefuncionarios = 0;
+		double salarioatual = 0;
+		String cargoatual = "";
+		int adicionar = 4;
+		
+		
+		do {
+			adicionar = Integer.parseInt(JOptionPane.showConfirmDialog(null, "Deseja cadastrar salários?"));
+			cargoatual = JOptionPane.showInputDialog("Digite o cargo: ");
+			salarioatual = Double.parseDouble(JOptionPane.showInputDialog("Digite o salário: "));
+			
+			if (salarioatual > maiorsalario)
+			{
+				maiorsalario = salarioatual;
+				maiorcargo = cargoatual;
+			}
+			somasalarios += salarioatual;
+			qtdefuncionarios++;
+		}
+		while (adicionar == 0);
+		
+		System.out.printf("Total de todos os salários: R$%.2f\nMédia de todos os salários: R$%.2f\nCargo com maior salário: %s (valor: R$%.2f)",somasalarios,(somasalarios/qtdefuncionarios),maiorcargo,maiorsalario);
+				
+	}
+}

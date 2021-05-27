@@ -1,0 +1,41 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDo {
+	
+	public static void main(String[] args) {
+		
+		int jogador1 = Integer.parseInt(JOptionPane.showInputDialog("Jogador 1: "));
+				
+		int jogador2 = -1;
+		int contador = 0;
+		
+		do
+		{
+			jogador2 = Integer.parseInt(JOptionPane.showInputDialog("Jogador 2: "));
+			contador ++;
+			if (jogador2 > jogador1)
+			{
+				//System.out.println("QUASE! Dica: o número que você digitou é MAIOR. Continue tentando!");
+				JOptionPane.showMessageDialog(null, "QUASE! Dica: o número que você digitou é MAIOR. Continue tentando!");
+			}
+			else if (jogador1 != jogador2)
+			{
+				JOptionPane.showMessageDialog(null, "QUASE! Dica: o número que você digitou é MENOR. Continue tentando!");
+				//System.out.println("QUASE! Dica: o número que você digitou é MENOR. Continue tentando!");
+			}
+			
+		}
+		while (jogador2 != jogador1);
+		
+		if (jogador1 == jogador2)
+		{
+			JOptionPane.showMessageDialog(null, "Parabéns, você acertou com "+contador+" tentativas!");
+			//System.out.printf("Parabéns, você acertou com %d tentativas!", contador);			
+		}
+		
+		//finalizado as 26/05/2021 12:09
+		
+	}
+}

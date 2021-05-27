@@ -1,0 +1,8 @@
+package decisao;
+
+public class DecisaoSimples {
+
+	public static void main(String[] args) {
+		
+	}
+}

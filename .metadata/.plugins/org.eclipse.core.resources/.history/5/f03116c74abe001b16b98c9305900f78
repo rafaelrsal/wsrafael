@@ -1,0 +1,10 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio2 {
+
+	String nome = JOptionPane.showInputDialog("Digite seu nome: ");
+	String email = JOptionPane.showInputDialog("Digite seu email: ");
+	int adicionar = JOptionPane.showConfirmDialog(null, "Deseja adicionar mais itens?");
+}
