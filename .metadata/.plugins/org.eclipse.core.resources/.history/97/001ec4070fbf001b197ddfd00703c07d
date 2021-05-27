@@ -1,0 +1,16 @@
+package br.com.rubinhocar.implementacao;
+
+import br.com.rubinhocar.modelo.Veiculo;
+
+public class TesteVeiculo {
+
+	public static void main(String[] args) {
+
+		Veiculo objeto = new Veiculo();
+		objeto.preencherModelo("camaro a");
+		
+		System.out.println("Modelo: "+objeto.retornarModelo());
+			
+	}
+
+}
