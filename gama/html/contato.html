@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMA Academy - Contato</title>
+</head>
+
+<body>
+    <table border="0" width="100%">
+        <tr>
+            <td align="center"><img src="../imagens/logo_gama.png" width="160" height="40"></td>
+            <td align="right">QUEM SOMOS</td>
+            <td align="right">PARA PESSOAS</td>
+            <td align="right">PARA EMPRESAS</td>
+            <td align="right">CONTATO</td>
+            <td align="right">CONTEÚDOS</td>
+        </tr>
+    </table>
+    <!--Quebra de linha-->
+    <br>
+
+    <!--Criando campos do formulário-->
+    <form id="contatos" method="POST">
+        <fieldset>
+            <legend>Preencha as informações para realizar o nosso curso</legend> <!--LEGENDA PARA O FORM-->
+            <label>Nome:</label><input type="text" name="nome_cliente" required><br><br>
+            <label>Email:</label><input type="email" name="email_cliente" required><br><br>
+            <label>Senha:</label><input type="password" name="senha_cliente" required><br><br>
+            
+            <!--INSERINDO BOTÃO RADI0-->
+            <label>Genero: </label>
+            <input type="radio" name="genero_cliente" value="Feminino"> Feminino
+            <input type="radio" name="genero_cliente" value="Masculino"> Masculino
+            <input type="radio" name="genero_cliente" value="Outros"> Outros
+            <input type="radio" name="genero_cliente" value="Nao Informado"> Não Informado
+            <br><br>       
+
+            <!--INSERINDO LISTA DE SELEÇÃO-->
+            <label>Escolha o curso que deseja fazer: </label>
+            <select>
+                <option value="HTML" name="curso_escolhido">HTML</option>
+                <option value="CSS" name="curso_escolhido">CSS</option>
+                <option value="XML" name="curso_escolhido">XML</option>
+                <option value="JS" name="curso_escolhido">JavaScript</option>
+            </select>
+            <br><br>
+
+            <!--INSERINDO UM CAMPO DATA-->
+            <label>Escolha a data que deseja fazer o curso: </label>
+            <input type="date" name="data_curso" required>
+            <br><br>
+
+            <!--INSERINDO UM BOTÃO CHECKBOX-->
+            <label>Escolha qual período deseja fazer o curso:</label>
+            <input type="checkbox" name="periodo" value="Manha">Manhã
+            <input type="checkbox" name="periodo" value="Tarde">Tarde
+            <input type="checkbox" name="periodo" value="Noite">Noite
+            <br><br>
+            
+            <!--INSERINDO UM CAMPO DE MENSAGEM COM TEXTAREA-->
+            <label>Mensagem:</label><br>
+            <textarea name="mensagem" cols="30" rows="3"></textarea>
+
+            <!--INSERINDO UM BOTÃO-->  
+            <br><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
