@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GAMA Academy - JavaScript</title>		
+		
+		<!-- CRIANDO UM COMPONENTE EM JAVASCRIPT-->
+		
+		<script>
+			//alert("Sejam vem vindos!!!");
+		
+			//DECLARANDO variaveis
+			var empresa = "Gama Academy";
+			var mensagem = "Sejam todos bem vindos a - ";
+			alert(mensagem+empresa);
+			
+			//Captura dados digitados pelo usuario
+			var nome = prompt ("Olá qual o seu nome?");
+			alert ("Seja bem vindo "+nome);
+			
+			//Criando uma FUNÇÃO em JavaScript
+			function mensagem()
+			{
+				alert("Oieee como você está?");
+			}
+			
+			function validar()
+			{
+				var nome=conta.nome_cliente.value;
+				alert();
+				
+				if ()
+				{
+					alert("O preenchimento desse campo é obrigatório");
+					contato.nome_cliente.focus();		
+					return false;					
+				}
+				
+				alert ("seja bem vindo"+nome);
+				
+			}
+			
+		</script>
+		
+	</head>
+
+	<body>
+		
+		<!-- INSERIR UM CABEÇALHO -->
+		<h3>Olá seja bem vindo a Gama Academy</h3>		
+		<p>Clique no botão abaixo para ter uma interação </p>
+		
+		<!--Botão de interação-->
+		<input type="button" value="Me click" onclick="mensagem()">
+		
+		
+		<!-- Criar um formulario com botão de ação-->
+		<br><br>
+		<h3>Preencha o campo abaixo</h3>
+		<form id="" method="POST">
+			NOME CLIENTE: <input type="">
+			<input type="submit" onclick="return validar()" value="enviar">
+		</form>
+		
+	</body>
+</html>
