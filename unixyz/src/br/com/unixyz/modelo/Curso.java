@@ -11,6 +11,7 @@ public class Curso {
 	public Curso() {
 		super();
 	}
+	
 
 	public Curso(String nome, String titulacao, double valor, int cargaHoraria) {
 		super();
