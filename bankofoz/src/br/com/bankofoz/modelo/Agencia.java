@@ -1,6 +1,8 @@
 package br.com.bankofoz.modelo;
 
-public class Agencia {
+import br.com.bankofoz.interfaces.PadraoBanco;
+
+public class Agencia implements PadraoBanco{
 
 	private int numero;
 	private String nome;
@@ -48,6 +50,18 @@ public class Agencia {
 	@Override
 	public String toString() {
 		return "Agencia [numero=" + numero + ", nome=" + nome + ", telefone=" + telefone + "]";
+	}
+
+	@Override
+	public String get() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean delete(int id) {
+		// TODO Auto-generated method stub
+		return false;
 	}	
 	
 }
